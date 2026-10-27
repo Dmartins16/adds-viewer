@@ -1,0 +1,38 @@
+/* Lusomaniac Games: one small stylesheet for every page */
+:root {
+  --bg: #0f1012; --surface: #18191c; --line: #2a2b30; --text: #ececee; --muted: #a3a3ab; --accent: #ff7a33;
+  --display: "Barlow Condensed", "Arial Narrow", sans-serif; --body: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 var(--body); }
+a { color: var(--accent); }
+a:hover { color: #ff9a63; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+header.site { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 48px; }
+header.site a.home { color: var(--text); text-decoration: none; font: 700 22px/1 var(--display); letter-spacing: 1px; text-transform: uppercase; }
+header.site nav { display: flex; gap: 16px; font-size: 14px; }
+header.site nav a { color: var(--muted); text-decoration: none; }
+header.site nav a:hover, header.site nav a[aria-current="page"] { color: var(--text); }
+h1 { font: 700 clamp(40px, 8vw, 64px)/1 var(--display); margin: 0 0 16px; letter-spacing: 0.5px; }
+h2 { font: 700 28px/1.15 var(--display); margin: 40px 0 8px; letter-spacing: 0.3px; }
+h3 { font-size: 17px; margin: 24px 0 4px; }
+p, ul { margin: 0 0 12px; }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.lead { font-size: 19px; color: var(--muted); max-width: 60ch; }
+.muted { color: var(--muted); }
+.small { font-size: 14px; }
+.card { display: flex; gap: 20px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 20px; text-decoration: none; color: var(--text); }
+.card:hover { border-color: #3a3b42; color: var(--text); }
+.card .icon { width: 72px; height: 72px; flex: none; border-radius: 18px; background: #0f1012; display: grid; place-items: center; }
+.card h3 { margin: 0 0 4px; font: 700 26px/1 var(--display); }
+.card p { margin: 0; color: var(--muted); }
+.btn { display: inline-flex; align-items: center; min-height: 46px; padding: 0 18px; border-radius: 12px; background: var(--accent); color: #1a0c03; font-weight: 600; text-decoration: none; }
+.btn:hover { color: #1a0c03; background: #ff9a63; }
+.btn.ghost { background: transparent; color: var(--text); border: 1px solid #34353b; }
+.row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.summary { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; margin: 24px 0; }
+.summary ul { margin: 0; }
+footer.site { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); display: flex; gap: 16px; flex-wrap: wrap; justify-content: space-between; }
